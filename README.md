@@ -1,2 +1,2 @@
 # AlgorithmMachine
- Makes use of different algorithms using Python and Grokking Algorithms
+ Demonstrate use of different algorithms using Python and Grokking Algorithms
