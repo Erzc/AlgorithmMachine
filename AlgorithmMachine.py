@@ -2,26 +2,57 @@
 # Purpose: Demonstrate use of different algorithms
 # Python version 3.10
 
-#imports BinarySearch.py file
-from BinarySearch import BinarySearch
-
-#--------------------#Main---------
-#Instantiate new object from class
+# import BinarySearch.py file
+#from BinarySearch import BinarySearch as binarySearch
 
 
-#Constructor without any arguments
-
+#--------------------Main---------
 
 #Loop until user quits
+while True:
+    #Try except statement to handle float value exception
+    try:
+        #Ask for user algorithm/problem
+        print("stories go here")
+        user_story = input("\nPlease select a story and its associated algorithm to complete (enter an integer): ")
 
-    #Ask for user problem/algorithm
+        #Match-case statement, instantiate class object depending on answer
+        def match_result(x):
+            match x:
+                case '1':
+                    return ""
+                case '2':
+                    return ""
+                case '3':
+                    return ""
+                case '4':
+                    return ""
+                case '5':
+                    return ""
+                case '6':
+                    return ""
+                case '7':
+                    return ""
+                case '8':
+                    return ""
+                case '9':
+                    return "9"
+                case _:
+                    return "0"   #Default case
+        
+        result_story = match_result(user_story)
 
-
-    #Exception errors
-
-
-
-
+    #Exception handling
+    except TypeError :
+        print ("Error! Wrong data type.")
+    except NameError:
+        print ("Error! Data name unknown.")
+    except Exception as e:
+        print ("Error! Something went wrong... ", e)
+    
+    again = input("\nDo another story (y/n)? ")
+    if again == "n":
+        break
 
 
 print("You exited the program, goodbye!")
