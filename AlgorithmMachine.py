@@ -35,8 +35,6 @@ while True:
                     return ""
                 case '8':
                     return ""
-                case '9':
-                    return "9"
                 case _:
                     return "0"   #Default case
         
