@@ -1,6 +1,6 @@
 # Programmer: Eric N
 # Purpose: Demonstrate use of different algorithms
-# Python version 3.10
+# Python version 3.11
 
 # import BinarySearch.py file
 #from BinarySearch import BinarySearch as binarySearch
@@ -14,7 +14,7 @@ while True:
     try:
         #Ask for user algorithm/problem
         print("stories go here")
-        user_story = input("\nPlease select a story and its associated algorithm to complete (enter an integer): ")
+        user_story = input("\nPlease select an algorithm to work on (enter an integer): ")
 
         #Match-case statement, instantiate class object depending on answer
         def match_result(x):
@@ -46,9 +46,9 @@ while True:
     except NameError:
         print ("Error! Data name unknown.")
     except Exception as e:
-        print ("Error! Something went wrong... ", e)
+        print ("Error! Something went wrong...", e)
     
-    again = input("\nDo another story (y/n)? ")
+    again = input("\nDo another story (y/n)?")
     if again == "n":
         break
 
