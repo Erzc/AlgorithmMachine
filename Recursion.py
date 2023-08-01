@@ -8,5 +8,6 @@ def fact(n):
         return n * fact(n-1)
 
 #Using the factorial function
-result = fact(20)
+number = 20
+result = fact(number)
 print(f"Factorial of {number} is: {result}")
