@@ -1,3 +1,10 @@
+#The BFS algorithm explores all reachable nodes and edges, so the
+#time complexity grows linearly with the size of the input graph
+#O(V + E)
+    #V - vertices (nodes) i.e. people
+    #E - edges i.e. relationships
+
+
 from collections import deque
 
 #class BreathFirstSearch:
