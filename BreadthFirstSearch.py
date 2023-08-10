@@ -1,5 +1,4 @@
-#The BFS algorithm explores all reachable nodes and edges, so the
-#time complexity grows linearly with the size of the input graph
+#The BFS algorithm explores all reachable nodes and edges, so the time complexity grows linearly with the size of the input graph
 #O(V + E)
     #V - vertices (nodes) i.e. people
     #E - edges i.e. relationships
@@ -31,7 +30,7 @@ def search(name):
     search_queue += graph[name] #Add the neighbors of the starting person
     searched = [] #Keep track of visited nodes
 
-    while search_queue: #While queue isn't empty
+    while search_queue: #While queue is not empty
         person = search_queue.popleft()  #Get front node from the queue
         if not person in searched: #Only search if person not already searched
             if check_names(person):
@@ -45,6 +44,7 @@ def search(name):
 #Start searching from Abby
 names_ending_with_y = search("Abby")
 
+#Print all names if names found
 if names_ending_with_y:
     print("Names that end with 'y':")
     for name in names_ending_with_y:
