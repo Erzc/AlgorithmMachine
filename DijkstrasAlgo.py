@@ -6,18 +6,14 @@ import heapq
 #    def __init__(self): #Initialize objects state
 
 
-
-
-
-
 #______
-#Graph represented as an adjacency list
+#Graph
 graph_costs = {
-    'Start': 2,
-    'A': 4,
-    'B': 3,
-    'C': 5,
-    'Fin': 7
+    'Start': 7,
+    'A': 5,
+    'B': 4,
+    'C': 2,
+    'Fin': 4
 }
 
 parents = {
