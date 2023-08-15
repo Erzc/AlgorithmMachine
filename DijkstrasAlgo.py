@@ -1,4 +1,8 @@
 #Dijkstras algorithm assumes non-negative edge weights
+#Time complexity of Dijkstra's algorithm with a binary heap (priority queue) is: 
+#O((V + E) log V)
+    #V = vertices (nodes) i.e. letters
+    #E = edges i.e. relationships/weights
 
 import heapq
 
