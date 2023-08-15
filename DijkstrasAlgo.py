@@ -8,18 +8,27 @@ import heapq
 
 #______
 #Graph
-graph_costs = {
+
+graph = {
+    'Start': {'B': 5, 'C': 6},
+    'A': {'B': 4, 'C': 7},
+    'B': {'A': 5, 'C': 3, 'D': 3},
+    'C': {'A': 7, 'B': 2, 'Final': 8},
+    'Final': 4
+}
+
+costs_table =  {
     'Start': 7,
     'A': 5,
     'B': 4,
     'C': 2,
-    'Fin': 4
+    'Final': 4
 }
 
 parents = {
-    'A': "start",
-    'B': "start",
-    'Fin': None
+    'A': 5,
+    'B': 3,
+    'Final': None
 }
 
 #Array to keep track of all processeed nodes
@@ -30,26 +39,26 @@ def find_shortest_distance(graph):
     lowest_cost = float("inf")
     lowest_cost_node = None
     #For loop to go through each node
-    for node in graph_costs:
-        cost = graph_costs[node]
+    for node in costs_table:
+        cost = costs_table[node]
         if cost < lowest_cost and node not in processed:
             lowest_cost = cost
             lowest_cost_node = node
     return lowest_cost_node
 
 
-node = find_shortest_distance(graph_costs)
+node = find_shortest_distance(costs_table)
 
 while node is not None:
-    cost = graph_costs[node]
-    neighbors = cost[node]
-    for n in neighbors.key():
+    cost = costs_table[node]
+    neighbors = graph[node]
+    for n in neighbors.keys():
         new_cost = cost + neighbors[n]
-        if graph_costs[n] > new_cost:
-            graph_costs[n] = new_cost
+        if costs_table[n] > new_cost:
+            costs_table[n] = new_cost
             parents[n] = node
 
-    processed.append[node]
+    processed.append(node)
     node = find_shortest_distance(node)
 
 print("Fastest route from A:")
