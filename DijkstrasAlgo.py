@@ -14,7 +14,8 @@ graph = {
     'A': {'B': 4, 'C': 7},
     'B': {'A': 5, 'C': 3, 'D': 3},
     'C': {'A': 7, 'B': 2, 'Final': 8},
-    'Final': 4
+    'D': {'B': 3, 'C': 5},
+    'Final': {}
 }
 
 costs_table =  {
@@ -22,12 +23,15 @@ costs_table =  {
     'A': 5,
     'B': 4,
     'C': 2,
-    'Final': 4
+    'D': 3,
+    'Final': float('inf')
 }
 
 parents = {
     'A': 5,
     'B': 3,
+    'C': 4,
+    'D': 2,
     'Final': None
 }
 
@@ -59,10 +63,15 @@ while node is not None:
             parents[n] = node
 
     processed.append(node)
-    node = find_shortest_distance(node)
+    node = find_shortest_distance(costs_table)
+
+    print("Updated costs table:", costs_table)
+    print("Updated parents:", parents)
+    print("Processed nodes:", processed)
 
 print("Fastest route from A:")
 print(node)
+
 
 
 
