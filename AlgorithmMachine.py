@@ -14,7 +14,7 @@ while True:
     try:
         #Ask for user algorithm/problem
         print("stories go here")
-        user_story = input("\nPlease select an algorithm to work on (enter an integer): ")
+        user_story = input("\nPlease select an algorithm to display (enter a number 1-6): ")
 
         #Match-case statement, instantiate class object depending on answer
         def match_result(x):
@@ -30,10 +30,6 @@ while True:
                 case '5':
                     return ""
                 case '6':
-                    return ""
-                case '7':
-                    return ""
-                case '8':
                     return ""
                 case _:
                     return "0"   #Default case
