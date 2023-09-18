@@ -3,7 +3,12 @@
 # Python version 3.11
 
 # import BinarySearch.py file
-#from BinarySearch import BinarySearch as binarySearch
+from BinarySearch import BinarySearch as binarySearch
+from BreadthFirstSearch import BreadthFirstSearch as breadthFirstSearch
+from DijkstrasAlgo import DijkstrasAlgo as dijkstrasAlgo
+from GreedyAlgo import GreedyAlgo as greedyAlgo
+from Recursion import Recursion as recursion
+from SelectionSort import SelectionSort as selectionSort
 
 
 #--------------------Main---------
@@ -20,7 +25,7 @@ while True:
         def match_result(x):
             match x:
                 case '1':
-                    return ""
+                    return binarySearch()
                 case '2':
                     return ""
                 case '3':
