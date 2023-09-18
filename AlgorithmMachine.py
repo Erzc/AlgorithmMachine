@@ -19,7 +19,7 @@ while True:
     try:
         #Ask for user algorithm/problem
         print("stories go here")
-        user_story = input("\nPlease select an algorithm to display (enter a number 1-6): ")
+        user_story = input("\nPlease select a story/algorithm to display (enter a number 1-6): ")
 
         #Match-case statement, instantiate class object depending on answer
         def match_result(x):
@@ -27,17 +27,17 @@ while True:
                 case '1':
                     return binarySearch()
                 case '2':
-                    return ""
+                    return breadthFirstSearch()
                 case '3':
-                    return ""
+                    return dijkstrasAlgo()
                 case '4':
-                    return ""
+                    return greedyAlgo()
                 case '5':
-                    return ""
+                    return recursion()
                 case '6':
-                    return ""
+                    return selectionSort()
                 case _:
-                    return "0"   #Default case
+                    return "Error! Please enter a number 1-6."   #Default casea
         
         result_story = match_result(user_story)
 

@@ -6,7 +6,7 @@
 
 import heapq
 
-class DijkstraAlgo:
+class DijkstrasAlgo:
     def __init__(self): #Initialize objects state
 
 

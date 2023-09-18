@@ -6,7 +6,7 @@
 
 from collections import deque
 
-class BreathFirstSearch:
+class BreadthFirstSearch:
     def __init__(self): #Initialize object’s state
 
         #Dictionary to represent the graph
