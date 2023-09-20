@@ -63,9 +63,10 @@ while True:
             case _:
                 return "Error! Please enter a number 1-6."   #Default casea
     
-    #Call 
+    #Call function to run match case statement
     result_story = match_result(user_story)
 
+    #Ask if user wants to do another
     again = input("\nDo another story (y/n)?").strip().lower()
     if again != "y":
         break
