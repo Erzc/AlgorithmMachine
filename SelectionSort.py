@@ -19,5 +19,8 @@ class SelectionSort:
                 newArr.append(arr.pop(smallest)) #Then add to new array
             return newArr
 
+        #Display story to user:
+        #
+        #
 
         print(selectionSort([4, 7, 3, 5, 9, 2, 6, 3]))

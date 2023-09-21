@@ -16,8 +16,12 @@ class QuickSort:
                 greater = [x for x in arr if x > pivot] #Greater
 
                 return quicksort(less) + equal + quicksort(greater)
+            
+        #Display story to user:
+        #
+        #
 
-        #Test quicksort function
+        #Initialize array and call quicksort function
         arr = [4, 6, 3, 7, 1, 9, 2, 5, 2]
         sorted_arr = quicksort(arr)
         print(f"Here's the sorted array: {sorted_arr}.")

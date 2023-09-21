@@ -31,7 +31,7 @@ while True:
 
     #Try except statement to handle value exception
     try:
-        #Ask for user algorithm/problem
+        #Ask user for algorithm/problem
         user_story = int(input("\nPlease select a story/algorithm to display (enter a number 1-6): "))
         if user_story < 1 or user_story > 6:
             raise ValueError("Your number must be between 1 and 6")

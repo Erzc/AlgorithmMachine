@@ -25,6 +25,10 @@ class GreedyAlgo:
             #Return change
             return num_coins, change
 
+        #Display story to user:
+        #
+        #
+
         #Coins array - pennies, nickels, dimes, and quarters
         coin_types = [1, 5, 10, 25]
         #Define target

@@ -7,7 +7,11 @@ class Recursion:
             else:
                 return n * fact(n-1)
 
-        #Using the factorial function
+        #Display story to user:
+        #
+        #
+
+        #Call the factorial function
         number = 20
         result = fact(number)
         print(f"Factorial of {number} is: {result}")
