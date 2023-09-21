@@ -20,7 +20,10 @@ class SelectionSort:
             return newArr
 
         #Display story to user:
-        #
-        #
+        story = '''
+        
+        '''
+
+        print(story)
 
         print(selectionSort([4, 7, 3, 5, 9, 2, 6, 3]))

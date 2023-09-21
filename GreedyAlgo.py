@@ -26,8 +26,11 @@ class GreedyAlgo:
             return num_coins, change
 
         #Display story to user:
-        #
-        #
+        story = '''
+        
+        '''
+
+        print(story)
 
         #Coins array - pennies, nickels, dimes, and quarters
         coin_types = [1, 5, 10, 25]

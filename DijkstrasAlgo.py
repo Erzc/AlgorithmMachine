@@ -68,8 +68,11 @@ class DijkstrasAlgo:
             return path
 
         #Display story to user:
-        #
-        #
+        story = '''
+        
+        '''
+
+        print(story)
 
         #Graph
         graph = {

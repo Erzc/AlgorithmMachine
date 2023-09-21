@@ -41,8 +41,11 @@ class BreadthFirstSearch:
             return names_with_y
 
         #Display story to user:
-        #
-        #
+        story = '''
+        
+        '''
+
+        print(story)
 
         #Start searching from Abby
         names_ending_with_y = search("Abby")

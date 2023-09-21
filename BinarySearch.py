@@ -25,7 +25,11 @@ class BinarySearch:
             return -1 #If target not found
 
         #Display story to user:
-        pinrt
+        story = '''
+        
+        '''
+
+        print(story)
 
         #Sorted array and target:
         sorted_arr = [4, 9, 15, 23, 36, 39, 45, 51, 68, 73, 75, 101, 124, 146, 178]

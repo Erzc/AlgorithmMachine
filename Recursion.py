@@ -8,8 +8,11 @@ class Recursion:
                 return n * fact(n-1)
 
         #Display story to user:
-        #
-        #
+        story = '''
+        
+        '''
+
+        print(story)
 
         #Call the factorial function
         number = 20

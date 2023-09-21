@@ -18,8 +18,11 @@ class QuickSort:
                 return quicksort(less) + equal + quicksort(greater)
             
         #Display story to user:
-        #
-        #
+        story = '''
+        
+        '''
+
+        print(story)
 
         #Initialize array and call quicksort function
         arr = [4, 6, 3, 7, 1, 9, 2, 5, 2]
