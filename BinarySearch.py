@@ -24,16 +24,22 @@ class BinarySearch:
 
             return -1 #If target not found
 
-        #Display story to user:
-        story = '''
-        
-        '''
+        target_num = 75
 
-        print(story)
+        #Display story to user:
+
+        print("Full list of integers: 4, 9, 15, 23, 36, 39, 45, 51, 68, 73, 75, 101, 124, 146, 178")
+
+        #Loop to get user's number and verify integer
+        while True:
+            try:
+                target_num = int(input("Please enter an integer to search for: "))
+                break  #Exit loop if conversion succeeds
+            except ValueError:
+                print("Error! Please enter an integer.")
 
         #Sorted array and target:
         sorted_arr = [4, 9, 15, 23, 36, 39, 45, 51, 68, 73, 75, 101, 124, 146, 178]
-        target_num = 75
         result = binary_search(sorted_arr, target_num)
 
         if result == -1:
