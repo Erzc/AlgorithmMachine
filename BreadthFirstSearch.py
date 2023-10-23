@@ -53,7 +53,7 @@ class BreadthFirstSearch:
         "Ron": ["Poe", "Emile"],
         "Carl": ["Abby", "Harry"]
 
-        This algorithm finds and displays all names that end with a specific character.
+        This algorithm finds and displays all names that end with a specific character.\n
         '''
 
         print(story)

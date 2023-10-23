@@ -33,7 +33,7 @@ class BinarySearch:
         #Loop to get user's number and verify integer
         while True:
             try:
-                target_num = int(input("Please enter an integer to search for: "))
+                target_num = int(input("\nPlease enter an integer to search for: "))
                 break  #Exit loop if conversion succeeds
             except ValueError:
                 print("Error! Please enter an integer.")

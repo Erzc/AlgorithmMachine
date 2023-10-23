@@ -69,7 +69,15 @@ class DijkstrasAlgo:
 
         #Display story to user:
         story = '''
-        
+        Here is a full list of neighbors, presented as a graph:
+
+        'A': {'B': 4, 'C': 7},
+        'B': {'A': 5, 'B': 3, 'C': 3},
+        'C': {'A': 7, 'B': 2, 'E': 8},
+        'E': {'B': 3, 'C': 5}
+
+        This algorithm finds the shortest path between non-negative edge weights,
+        in this case, it will find the shortest path between the above 'A' and 'E' characters.
         '''
 
         print(story)
