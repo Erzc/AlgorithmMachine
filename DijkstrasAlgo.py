@@ -77,7 +77,7 @@ class DijkstrasAlgo:
         'E': {'B': 3, 'C': 5}
 
         This algorithm finds the shortest path between non-negative edge weights,
-        in this case, it will find the shortest path between the above 'A' and 'E' characters.
+        in this case, it will find the shortest path between the above 'A' and 'E' characters.\n
         '''
 
         print(story)

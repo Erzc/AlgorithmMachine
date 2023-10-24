@@ -27,19 +27,28 @@ class GreedyAlgo:
 
         #Display story to user:
         story = '''
-        
+        This algorithm finds the minimum number of coins needed to reach a
+        target price using: pennies, nickels, dimes, and quarters.\n
         '''
 
         print(story)
 
         #Coins array - pennies, nickels, dimes, and quarters
         coin_types = [1, 5, 10, 25]
-        #Define target
-        coin_goal = 91
+        #Define set target
+        #coin_goal = 91
+
+        #Loop to get user's number and verify integer
+        while True:
+            try:
+                coin_goal = int(input("Please enter the target amount (integer): "))
+                break  #Exit loop if conversion succeeds
+            except ValueError:
+                print("Error! Please enter an integer.")
 
         #Call find_min_coins function
         num, change = find_min_coins(coin_types, coin_goal)
 
         #Display results
-        print("Min number of coins to reach target:", num)
+        print("\nMin number of coins to reach target:", num)
         print("Coins used:", change)

@@ -19,12 +19,12 @@ while True:
     #Display stories/choices
     choices = '''
     CHOICES:
-    1. Binary Search
-    2. Breadth First Search
-    3. Dijkstras Algorithm
-    4. Greedy Algorithm
-    5. Recursion
-    6. Selection Sort
+    1. Binary Search - Finds the index of a target number within a sorted array.
+    2. Breadth First Search - Returns all names that end with a target character within a graph of neighbors.
+    3. Dijkstras Algorithm - Retrieves the shortest path between two characters within a graph of neighbors.
+    4. Greedy Algorithm - Finds the minimum number of coins needed to reach a target price.
+    5. Recursion - 
+    6. Selection Sort - 
     '''
 
     print(choices)
@@ -32,7 +32,7 @@ while True:
     #Try except statement to handle value exception
     try:
         #Ask user for algorithm/problem
-        user_story = int(input("\nPlease select a story/algorithm to display (enter a number 1-6): \n"))
+        user_story = int(input("\nPlease select an algorithm (enter a number 1-6): \n"))
         if user_story < 1 or user_story > 6:
             raise ValueError("Your number must be between 1 and 6")
     except TypeError :

@@ -21,7 +21,7 @@ class SelectionSort:
 
         #Display story to user:
         story = '''
-        
+        \n
         '''
 
         print(story)
