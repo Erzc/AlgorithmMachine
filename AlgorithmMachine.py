@@ -18,12 +18,12 @@ while True:
 
     #Display stories/choices
     choices = '''
-    ALGORITHM CHOICES:
+    CHOICES:
     1. Binary Search - Finds the index of a target number within a sorted array.
     2. Breadth First Search - Returns all names that end with a target character within a graph of neighbors.
     3. Dijkstras Algorithm - Retrieves the shortest path between two characters within a graph of neighbors.
     4. Greedy Algorithm - Finds the minimum number of coins needed to reach a target price.
-    5. Recursion - 
+    5. Recursion - Calculates the factorial of a given number.
     6. Selection Sort - 
     '''
 
