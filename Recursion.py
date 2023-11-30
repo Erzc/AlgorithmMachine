@@ -12,7 +12,6 @@ class Recursion:
         #Display story to user:
         story = '''
         \nThis algorithm calculates the factorial of a positive integer using recursion (calling itself within a function).
-
         '''
 
         print(story)

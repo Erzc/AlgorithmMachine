@@ -7,6 +7,7 @@ from BinarySearch import BinarySearch as binarySearch
 from BreadthFirstSearch import BreadthFirstSearch as breadthFirstSearch
 from DijkstrasAlgo import DijkstrasAlgo as dijkstrasAlgo
 from GreedyAlgo import GreedyAlgo as greedyAlgo
+from QuickSort import QuickSort as quickSort
 from Recursion import Recursion as recursion
 from SelectionSort import SelectionSort as selectionSort
 
@@ -23,8 +24,9 @@ while True:
     2. Breadth First Search - Returns all names that end with a target character within a graph of neighbors.
     3. Dijkstras Algorithm - Retrieves the shortest path between two characters within a graph of neighbors.
     4. Greedy Algorithm - Finds the minimum number of coins needed to reach a target price.
-    5. Recursion - Calculates the factorial of a given number.
-    6. Selection Sort - 
+    5. QuickSort - Sorts an array of integers from least to greatest.
+    6. Recursion - Calculates the factorial of a given number.
+    7. Selection Sort - 
     '''
 
     print(choices)
@@ -32,9 +34,9 @@ while True:
     #Try except statement to handle value exception
     try:
         #Ask user for algorithm/problem
-        user_story = int(input("\nPlease select an algorithm (enter a number 1-6): \n"))
+        user_story = int(input("\nPlease select an algorithm (enter a number 1-7): \n"))
         if user_story < 1 or user_story > 6:
-            raise ValueError("Your number must be between 1 and 6")
+            raise ValueError("Your number must be between 1 and 7")
     except TypeError :
         print ("Error! Wrong data type.")
         continue
@@ -42,7 +44,7 @@ while True:
         print ("Error! Data name unknown.")
         continue
     except Exception as e:
-        print ("Error! Something went wrong...", e)
+        print ("Error! Something else went wrong.", e)
         continue
 
     #Match-case statement, instantiate class object depending on answer
@@ -57,8 +59,10 @@ while True:
             case 4:
                 return greedyAlgo()
             case 5:
-                return recursion()
+                return quickSort()
             case 6:
+                return recursion()
+            case 7:
                 return selectionSort()
             case _:
                 return "Error! Please enter a number 1-6."   #Default casea
